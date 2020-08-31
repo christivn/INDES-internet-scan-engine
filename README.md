@@ -1,9 +1,7 @@
 # INDES
 IPV4 Internet Connected Devices Scan Engine
 
-<span style="color:red"># [ IN PROCESS ]</span>
-
-![terminal](https://i.ibb.co/drPb5Wp/)
+# [ IN PROCESS ]
 
 ## How does it work
 The search engine uses the library [subnet-calculator-cidr](https://github.com/christivn/subnet-calculator-cidr) to generate IP ranges according to country, for targeted attacks. Then it goes through the whole range getting the data through [NMAP](https://github.com/nmap/nmap) and saves the data in a DB with MYSQL, and can use the TOR network u other Proxy to remain anonymous.
