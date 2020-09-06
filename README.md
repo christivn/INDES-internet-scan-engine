@@ -11,7 +11,7 @@ The search engine uses the library [subnet-calculator-cidr](https://github.com/c
 ## Requirements
 <p>> Python 3<br>
 > Nmap<br>
-> Tor<br>
+> Tor / Proxy (Optional)<br>
 > Mysql</p>
 
 ### Disclaimer
