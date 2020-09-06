@@ -12,7 +12,7 @@ The search engine uses the library [subnet-calculator-cidr](https://github.com/c
 <p>> Python 3<br>
 > Nmap<br>
 > Tor<br>
-> Mysql database</p>
+> Mysql</p>
 
 ### Disclaimer
 This open code is for educational and safety purposes only, the author is not responsible for improper use of the tool.
