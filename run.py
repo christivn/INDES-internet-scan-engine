@@ -1,6 +1,5 @@
-import os, gui, nmap
+import os, gui, nmap, scan
 from generate import byCountryCode, randomCIDR, byCIDR
-import scan
 
 while True:
     gui.banner()

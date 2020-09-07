@@ -10,6 +10,13 @@ def scan(ip, country_code):
     connection.mydb.commit()
     cur.close()
 
+    now = datetime.now()
+    last_scan=now.strftime("%Y/%m/%d %H:%M:%S")
+    cur = connection.mydb.cursor()
+    cur.execute("UPDATE ip SET last_scan='"+last_scan+"' WHERE ip='"+ip+"'")
+    connection.mydb.commit()
+    cur.close()
+
     nm = nmap.PortScanner()
     print("\033[33m[\033[01m"+gui.time()+"] \033[0m\033[33m Scanning ("+ip+")\033[0m - \033[36mcountry: "+country_code+"\033[0m")
     results = nm.scan(ip)
@@ -24,25 +31,11 @@ def scan(ip, country_code):
                 connection.mydb.commit()
                 cur.close()
 
-        now = datetime.now()
-        last_scan=now.strftime("%Y/%m/%d %H:%M:%S")
-        cur = connection.mydb.cursor()
-        cur.execute("UPDATE ip SET last_scan='"+last_scan+"' WHERE ip='"+ip+"'")
-        connection.mydb.commit()
-        cur.close()
-
         cur = connection.mydb.cursor()
         cur.execute("UPDATE ip SET scanning=0 WHERE ip='"+ip+"'")
         connection.mydb.commit()
         cur.close()
     else:
-        now = datetime.now()
-        last_scan=now.strftime("%Y/%m/%d %H:%M:%S")
-        cur = connection.mydb.cursor()
-        cur.execute("UPDATE ip SET last_scan='"+last_scan+"' WHERE ip='"+ip+"'")
-        connection.mydb.commit()
-        cur.close()
-
         cur = connection.mydb.cursor()
         cur.execute("UPDATE ip SET scanning=0 WHERE ip='"+ip+"'")
         connection.mydb.commit()

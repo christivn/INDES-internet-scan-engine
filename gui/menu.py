@@ -2,19 +2,27 @@ import os
 import connection as connection
 
 cur = connection.mydb.cursor()
+cur.execute("update ip set scanning=0 where scanning=1 and last_scan!='0000-00-00 00:00:00' and last_scan<DATE_SUB(NOW(),INTERVAL 10 MINUTE)")
+connection.mydb.commit()
+cur.close()
+
+cur = connection.mydb.cursor()
 cur.execute("select count(ip) from ip")
 resultado = cur.fetchall()
 total=resultado[0][0]
+cur.close()
 
 cur = connection.mydb.cursor()
 cur.execute("select count(ip) from ip where last_scan!='0000-00-00 00:00:00'")
 resultado = cur.fetchall()
 scaned=resultado[0][0]
+cur.close()
 
 cur = connection.mydb.cursor()
 cur.execute("select count(ip) from openports")
 resultado = cur.fetchall()
 open_ports=resultado[0][0]
+cur.close()
 
 header="[ "+str(total)+" TOTAL IP ]  [ "+str(scaned)+" TOTAL SCANED IP ] [ "+str(open_ports)+" OPEN PORTS ] \033[0m"
 
