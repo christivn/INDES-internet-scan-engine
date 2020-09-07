@@ -1,8 +1,6 @@
 # INDES
 IPV4 Internet Connected Devices Scan Engine
 
-# [ IN PROCESS ]
-
 ![Internet Connected Devices Scan Engine](https://i.ibb.co/WBQp8hT/indes.png)
 
 ## How does it work

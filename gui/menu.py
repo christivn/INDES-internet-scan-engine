@@ -6,7 +6,19 @@ cur.execute("select count(ip) from ip")
 resultado = cur.fetchall()
 total=resultado[0][0]
 
-header="[ "+str(total)+" TOTAL IP ]  \033[01mAuthor: Christian Ramos (christivn)\033[0m"
+cur = connection.mydb.cursor()
+cur.execute("select count(ip) from ip where last_scan!='0000-00-00 00:00:00'")
+resultado = cur.fetchall()
+scaned=resultado[0][0]
+
+cur = connection.mydb.cursor()
+cur.execute("select count(ip) from openports")
+resultado = cur.fetchall()
+open_ports=resultado[0][0]
+
+header="[ "+str(total)+" TOTAL IP ]  [ "+str(scaned)+" TOTAL SCANED IP ] [ "+str(open_ports)+" OPEN PORTS ] \033[0m"
+
+author="\033[01m<-----------Author: Christian Ramos (christivn)----------->\033[0m"
 
 ban="""\033[36m                   
 ooooo ooooo      ooo oooooooooo.   oooooooooooo  .oooooo..o 
@@ -21,7 +33,7 @@ o888o o8o        `8  o888bood8P'   o888ooooood8 8""88888P'
 
 def banner():
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(ban)
+    print(ban+"\n\033[33m"+author)
 
 
 def bannerNoAuthor():
@@ -42,7 +54,7 @@ def select():
 
 def select_scan():
     print("""\033[35m+---------------------------------------------------------+\033[0m\033[35m
-|\033[32m                 \033[01m[ Scan devices ]\033[0m\033[36m                 \033[35m|
+|\033[32m                    \033[01m[ Scan devices ]\033[0m\033[36m                     \033[35m|
 |\033[36m   1.  \033[01mSelect from country code\033[0m\033[36m                          \033[35m|
 |\033[36m   2.  \033[01mRandom scan\033[0m\033[36m                                       \033[35m|
 +---------------------------------------------------------+\033[0m\033[0m""")
@@ -52,8 +64,9 @@ def select_scan():
 def select_generate():
     print("""\033[35m+---------------------------------------------------------+\033[0m\033[35m
 |\033[32m               \033[01m[ Generate ip from ranges ]\033[0m\033[36m               \033[35m|
-|\033[36m   1.  \033[01mSelect from country code\033[0m\033[36m                          \033[35m|
-|\033[36m   2.  \033[01mRandom CIDR\033[0m\033[36m                                       \033[35m|
+|\033[36m   1.  \033[01mGenerate from country code\033[0m\033[36m                        \033[35m|
+|\033[36m   2.  \033[01mGenerate from CIDR\033[0m\033[36m                                \033[35m|
+|\033[36m   3.  \033[01mRandom CIDR\033[0m\033[36m                                       \033[35m|
 +---------------------------------------------------------+\033[0m\033[0m""")
     print(">> Select: ", end="")
     return str(input())
