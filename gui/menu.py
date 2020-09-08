@@ -2,7 +2,7 @@ import os
 import connection as connection
 
 cur = connection.mydb.cursor()
-cur.execute("update ip set scanning=0 where scanning=1 and last_scan!='0000-00-00 00:00:00' and last_scan<DATE_SUB(NOW(),INTERVAL 10 MINUTE)")
+cur.execute("update cidr set scanning=0 where scanning=1")
 connection.mydb.commit()
 cur.close()
 

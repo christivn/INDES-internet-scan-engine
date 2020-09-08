@@ -13,11 +13,17 @@ while True:
             country_code=str(input())
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
             while True:
-                scan.byCountry(country_code)
-        elif(m=="2"):
+                try:
+                    scan.byCountry(country_code)
+                except:
+                    print("\033[31m[ ERROR ]\033[0m")
+        elif(m2=="2"):
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
             while True:
-                scan.ByRandom()
+                try:
+                    scan.ByRandom()
+                except:
+                    print("\033[31m[ ERROR ]\033[0m")
         else:
             print("\033[0m")
             os._exit(0)
@@ -30,7 +36,10 @@ while True:
             country_code=str(input())
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
             while True:
-                byCountryCode(country_code)
+                try:
+                    byCountryCode(country_code)
+                except:
+                    print("\033[31m[ ERROR ]\033[0m")
         elif(m=="2"):
             print(">> Insert CIDR (ej: 127.0.0.1/24): ", end="")
             cidr=str(input())
@@ -39,7 +48,10 @@ while True:
         elif(m=="3"):
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
             while True:
-                randomCIDR()
+                try:
+                    randomCIDR()
+                except:
+                    print("\033[31m[ ERROR ]\033[0m")
         else:
             print("\033[0m")
             os._exit(0)

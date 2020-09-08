@@ -23,7 +23,7 @@ def byCountryCode(country_code):
             cur.execute("INSERT INTO ip (cidr,ip) VALUES ('"+cidr+"','"+ip_list[i]+"')")
             connection.mydb.commit()
             cur.close()
-            print("\033[35m[\033[01m"+time()+"]\033[0m\033[35m Added ("+ip_list[i]+") - "+country_code+"\033[0m")
+            print("\033[34m[\033[01m"+time()+"]\033[0m\033[34m Added ("+ip_list[i]+")\033[0m -\033[36m "+country_code+"\033[0m")
         except:
             print("\033[31m[ "+ip_list[i]+" DUPLICATE ENTRY ]\033[0m")
 
