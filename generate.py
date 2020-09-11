@@ -1,4 +1,5 @@
 import geoipgen
+from os import _exit
 from gui import time
 import connection as connection
 
@@ -26,6 +27,7 @@ def byCountryCode(country_code):
             print("\033[34m[\033[01m"+time()+"]\033[0m\033[34m Added ("+ip_list[i]+")\033[0m -\033[36m "+country_code+"\033[0m")
         except:
             print("\033[31m[ "+ip_list[i]+" DUPLICATE ENTRY ]\033[0m")
+            _exit(0)
 
     cur = connection.mydb.cursor()
     cur.execute("UPDATE cidr SET scaned=1 WHERE cidr='"+cidr+"'")

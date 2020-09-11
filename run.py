@@ -1,5 +1,5 @@
-import os, gui, nmap, scan
-from generate import byCountryCode, randomCIDR, byCIDR
+import os, gui
+import scan, generate
 
 while True:
     gui.banner()
@@ -37,19 +37,19 @@ while True:
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
             while True:
                 try:
-                    byCountryCode(country_code)
+                    generate.byCountryCode(country_code)
                 except:
                     print("\033[31m[ ERROR ]\033[0m")
         elif(m=="2"):
             print(">> Insert CIDR (ej: 127.0.0.1/24): ", end="")
             cidr=str(input())
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
-            byCIDR(cidr)
+            generate.byCIDR(cidr)
         elif(m=="3"):
             print("\033[35m+---------------------------------------------------------+\033[0m\033[35m")
             while True:
                 try:
-                    randomCIDR()
+                    generate.randomCIDR()
                 except:
                     print("\033[31m[ ERROR ]\033[0m")
         else:
@@ -57,8 +57,8 @@ while True:
             os._exit(0)
 
     elif(m=="3"):
-        gui.bannerNoAuthor()
-        os.system("info.py 1")
+        print("\033[0m")
+        os._exit(0)
 
     else:
         print("\033[0m")

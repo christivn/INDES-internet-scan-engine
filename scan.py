@@ -1,4 +1,4 @@
-from os import cpu_count
+from os import cpu_count, _exit
 from datetime import datetime
 import connection as connection
 import gui, nmap
@@ -28,6 +28,7 @@ def scan(ip, country_code, cidr):
                     cur.close()
     except:
         print("\033[31m[ ERROR ]\033[0m")
+        _exit(0)
 
 
 def ByRandom():
