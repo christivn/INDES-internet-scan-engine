@@ -1,5 +1,6 @@
 # INDES
-IPV4 Internet Connected Devices Scan Engine *(save on MYSQL database)*
+IPV4 Internet Connected Devices Scan Engine.<br>
+The data is saved in a **mysql database designed** to visualize the data from there, and have a greater ease of implementation in other tools.
 
 ![Internet Connected Devices Scan Engine](https://i.ibb.co/WBQp8hT/indes.png)
 
@@ -11,6 +12,10 @@ The search engine uses the library [subnet-calculator-cidr](https://github.com/c
 > Nmap<br>
 > Tor / Proxy (Optional)<br>
 > Mysql</p>
+
+## Next updates
+\- Getting OS<br>
+\- Getting HTTP Header
 
 ### Disclaimer
 This open code is for educational and safety purposes only, the author is not responsible for improper use of the tool.
