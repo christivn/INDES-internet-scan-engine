@@ -18,6 +18,7 @@ The search engine uses the library [subnet-calculator-cidr](https://github.com/c
 ## Next updates
 \- Getting OS<br>
 \- Getting HTTP Header
+\- Web Dashboard
 
 ### Disclaimer
 This open code is for educational and safety purposes only, the author is not responsible for improper use of the tool.
