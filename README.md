@@ -3,7 +3,7 @@
 
 <table>
   <tr>
-    <td><b>INDES</b> is able to analyze all the open ports of a device connected to the internet, and register the services it offers, the OS it uses, or Headers.
+    <td><h2>Mode: CLI</h2><b>INDES</b> is able to analyze all the open ports of a device connected to the internet, and register the services it offers, the OS it uses, or Headers.
       The data is saved in a <b>mysql database designed</b> to visualize the data from there, and have a greater ease of implementation in other tools.</td>         
     <td width="50%"><img src="https://i.ibb.co/v1zzPNh/image.png"</td>     
   </tr> 
