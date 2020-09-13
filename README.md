@@ -24,10 +24,11 @@ The WebApp mode is a dashboard that allows you to analyze the saved data, throug
 The search engine uses the library [subnet-calculator-cidr](https://github.com/christivn/subnet-calculator-cidr) and [geoipgen](https://github.com/christivn/geoipgen) to generate IP ranges according to country, for targeted attacks. Then it goes through the whole range getting the data through [NMAP](https://github.com/nmap/nmap) and saves the data in a DB with MYSQL.
 
 ## 📑 Next updates
-* Getting OS<br>
-* Getting HTTP Header<br>
-* Web Dashboard<br>
-* Dork search<br>
+* Getting OS
+* Getting HTTP Header
+* ASN Scan
+* Web Dashboard
+* Dork search
 * CMS detect
 
 
