@@ -1,6 +1,14 @@
 # INDES
 ### *🌐 IPV4 Internet Connected Devices Scan Engine*<br>
 
+<table>
+  <tr>
+    <td>INDES is able to analyze all the open ports of a device connected to the internet, and register the services it offers, the OS it uses, or Headers.
+The data is saved in a **mysql database designed** to visualize the data from there, and have a greater ease of implementation in other tools.</td>         
+    <td>![Internet Connected Devices Scan Engine](https://i.ibb.co/v1zzPNh/image.png)</td>     
+  </tr> 
+</table>
+
 INDES is able to analyze all the open ports of a device connected to the internet, and register the services it offers, the OS it uses, or Headers.
 The data is saved in a **mysql database designed** to visualize the data from there, and have a greater ease of implementation in other tools.
 
