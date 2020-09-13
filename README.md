@@ -27,9 +27,9 @@ The search engine uses the library [subnet-calculator-cidr](https://github.com/c
 * Getting OS
 * Getting HTTP Header
 * ASN Scan
+* CMS detect
 * Web Dashboard
 * Dork search
-* CMS detect
 
 
 | ❌ DISCLAIMER ❌<br> This open source is for educational and security purposes only, the author is not responsible for inappropriate use of the tool. The responsibility will fall on the user of the code. |
