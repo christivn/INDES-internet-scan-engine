@@ -8,7 +8,7 @@
     <td><h2>Mode: CLI</h2>
 The CLI mode allows you to use the basic options from any terminal on any operating system (Linux, Windows, Mac).
 It is the best option, since it can run several processes at the same time on different terminal screens.</td>
-    <td width="50%"><img align="left" width="430px" src="https://i.ibb.co/v1zzPNh/image.png"></td>     
+    <td width="50%"><img align="left" width="90%" src="https://i.ibb.co/v1zzPNh/image.png"></td>     
   </tr> 
 </table>
 
@@ -16,7 +16,7 @@ It is the best option, since it can run several processes at the same time on di
   <tr>
     <td><h2>Mode: WebApp</h2>
 The WebApp mode is a dashboard that allows you to analyze the saved data, through the use of dorks.</td>
-    <td width="50%"><img align="left" width="430px" src="https://www.engranajesculturales.com/wp-content/uploads/2015/03/coming-soon-940x529.jpg"></td>     
+    <td width="50%"><img align="left" width="90%" src="https://www.engranajesculturales.com/wp-content/uploads/2015/03/coming-soon-940x529.jpg"></td>     
   </tr> 
 </table>
 
