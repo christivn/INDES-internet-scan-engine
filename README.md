@@ -1,15 +1,22 @@
 # INDES
 <h2>🌐 IPV4 Internet Connected Devices Scan Engine<br></h2>
 
-<p><b>INDES</b> is able to analyze all the open ports of a device connected to the internet, and register the services it offers, the OS it uses, or Headers.
-The data is saved in a <b>mysql database designed</b> to visualize the data from there, and have a greater ease of implementation in other tools.</p>
+<p><b>INDES</b> is able to analyze all the open ports of a device connected to the Internet and record the services it offers, the operating system it uses or the headers. The data is stored in a <b>mysql database</b>, it has ease of implementation in other tools, and the possibility of being configured in a <b>decentralized</b> way.</p>
       
 <table>
   <tr>
     <td><h2>Mode: CLI</h2>
 The CLI mode allows you to use the basic options from any terminal on any operating system (Linux, Windows, Mac).
 It is the best option, since it can run several processes at the same time on different terminal screens.</td>
-    <td width="50%"><img align="right" src="https://i.ibb.co/v1zzPNh/image.png"></td>     
+    <td width="50%"><img align="left" width="450px" src="https://i.ibb.co/v1zzPNh/image.png"></td>     
+  </tr> 
+</table>
+
+<table>
+  <tr>
+    <td><h2>Mode: WebApp</h2>
+The WebApp mode is a dashboard that allows you to analyze the saved data, through the use of dorks.</td>
+    <td width="50%"><img align="left" width="450px" src="https://www.engranajesculturales.com/wp-content/uploads/2015/03/coming-soon-940x529.jpg"></td>     
   </tr> 
 </table>
 
