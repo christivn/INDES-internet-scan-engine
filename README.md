@@ -33,6 +33,9 @@ The search engine uses the library [subnet-calculator-cidr](https://github.com/c
 * Web Dashboard
 * Dork search
 
+## 📊 Mysql Saved Data
+<img width="100%" src="https://i.imgur.com/GZBl5zs.png">
+
 
 | ❌ DISCLAIMER ❌<br> This open source is for educational and security purposes only, the author is not responsible for inappropriate use of the tool. The responsibility will fall on the user of the code. |
 | --- |
